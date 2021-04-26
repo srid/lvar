@@ -25,7 +25,6 @@ where
 
 import Control.Exception (throw)
 import qualified Data.Map.Strict as Map
-import Prelude hiding (empty, get, modify)
 
 -- A mutable variable (like @TMVar@), changes to which can be listened to from
 -- multiple threads.
