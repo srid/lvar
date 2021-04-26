@@ -9,6 +9,8 @@ category:           Concurrency
 synopsis:  TMVar that can be listened to
 bug-reports: https://github.com/srid/lvar/issues
 homepage: https://github.com/srid/lvar
+description:
+  LVar wraps a TMVar to allow multiple threads to listen to the underlying changes.
 
 extra-source-files:
   CHANGELOG.md
@@ -22,7 +24,7 @@ library
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
   build-depends:
-    , base                   ^>=4.14.1.0
+    , base                   >=4.13.0.0 && <=4.17.0.0
     , containers
     , stm
     , relude
