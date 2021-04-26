@@ -25,6 +25,11 @@ library
     , base                   ^>=4.14.1.0
     , containers
     , stm
+    , relude
+  mixins:
+    base hiding (Prelude),
+    relude (Relude as Prelude),
+    relude
   ghc-options:
     -Wall -Wincomplete-record-updates -Wincomplete-uni-patterns
   default-extensions:
