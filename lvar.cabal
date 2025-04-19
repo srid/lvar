@@ -25,13 +25,7 @@ library
   -- other-extensions:
   build-depends:
     , base                   >=4.13.0.0 && <=5
-    , containers
     , stm
-    , relude
-  mixins:
-    base hiding (Prelude),
-    relude (Relude as Prelude),
-    relude
   ghc-options:
     -Wall -Wincomplete-record-updates -Wincomplete-uni-patterns
   default-extensions:
