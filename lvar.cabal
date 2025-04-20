@@ -1,6 +1,6 @@
 cabal-version:      2.4
 name:               lvar
-version:            0.1.0.0
+version:            0.2.0.0
 license:            BSD-3-Clause
 copyright:          2021 Sridhar Ratnakumar
 maintainer:         srid@srid.ca
@@ -25,13 +25,7 @@ library
   -- other-extensions:
   build-depends:
     , base                   >=4.13.0.0 && <=5
-    , containers
     , stm
-    , relude
-  mixins:
-    base hiding (Prelude),
-    relude (Relude as Prelude),
-    relude
   ghc-options:
     -Wall -Wincomplete-record-updates -Wincomplete-uni-patterns
   default-extensions:
