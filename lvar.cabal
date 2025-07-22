@@ -25,7 +25,7 @@ library
   -- other-extensions:
   build-depends:
     , base                   >=4.13.0.0 && <=5
-    , stm
+    , stm  < 2.6
   ghc-options:
     -Wall -Wincomplete-record-updates -Wincomplete-uni-patterns
   default-extensions:

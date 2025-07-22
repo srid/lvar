@@ -1,6 +1,6 @@
 # Revision history for lvar
 
-## 0.2.0.0 -- 2025-04-20
+## 0.2.0.0 -- 2025-07-22
 
 - Simplify implementation (#8)
   - Remove `addListener` and `removeListener` (they are now redundant) 
