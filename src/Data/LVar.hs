@@ -77,7 +77,9 @@ notifyListeners write = do
   STM.writeTVar write new_hole
 
 -- | Listen for the next value update (since the last @listenNext@ or
--- @addListener@).
+-- @addListener@) and return the current value when that update occurs.
+-- Returns immediately after the first change is detected, not after multiple rapid changes.
+-- If multiple updates happen quickly, this returns the value after the first update.
 listenNext :: MonadIO m => LVar a -> m a
 listenNext (LVar var write) = liftIO $ do
   hole <- STM.readTVarIO write
